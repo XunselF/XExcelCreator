@@ -69,9 +69,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             //设置行高，设置第一行高度为100，参数1：行数 参数2：高度
 
             sheet.setColumnView(0,30);
-//设置列宽，设置第一列宽度50，参数1：列数 参数2：高度
+            //设置列宽，设置第一列宽度50，参数1：列数 参数2：高度
             sheet.setColumnView(1,30);
-//设置列宽，设置第一列宽度50，参数1：列数 参数2：高度
+            //设置列宽，设置第一列宽度50，参数1：列数 参数2：高度
             sheet.setColumnView(2,30);
             //创建字体，参数1：字体样式 参数2：字号， 参数3：粗体
             WritableFont font = new WritableFont(WritableFont.ARIAL,11,WritableFont.BOLD);

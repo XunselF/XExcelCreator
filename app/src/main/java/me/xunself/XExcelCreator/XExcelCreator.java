@@ -99,9 +99,9 @@ public class XExcelCreator {
         try{
             //设置宽度与高度
             if (mWidth != 0){
-                mSheet.setRowView(mRow,mWidth);
+                mSheet.setRowView(mRow,mHeight);
             }if (mHeight != 0){
-                mSheet.setColumnView(mColumn,mHeight);
+                mSheet.setColumnView(mColumn,mWidth);
             }
             Label label = new Label(mColumn,mRow,text,mFormat);
             mSheet.addCell(label);
