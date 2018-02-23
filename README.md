@@ -2,31 +2,36 @@
 
 快速创建Excel表格工具
 
-### 快速建表
 
-参1：文件名 参2；表名 参3：表的位置
+### 初始化
 
 ```
-XExcelCreator creator = new XExcelCreator(filename,sheetname,0)	//初始化  
-	.createText("HelloWorld")		//创建单个数据
-	.writeData();		//提交
+	XExcelCreator creator = new XExcelCreator(filename,sheetname,0);
+```
+
+### 快速建表
+
+```
+	XExcelCreator creator = new XExcelCreator(filename,sheetname,0)	 
+		.createText("HelloWorld")								
+		.writeData();
 ```
 
 ### 创建多个数据
 
 ```
-XExcelCreator creator = new XExcelCreator("test1","1",0);	//初始化
-creator.createAllTexts(new String[]{"1","2","3"});		//创建单条数据
-creator.writeData();		//提交
+	creator.createAllTexts(new String[]{"1","2","3"});
+	creator.writeData();
 
 ```
 
 ### 其他属性
 
 ```
-setFontStyle(fontStyle,fontSize,ifFontBlod);	//设置字体样式 字体大小 是否粗体
-creator.setmHeight(30);		//设置全部单条高度
-creator.setmWidth(300);		//设置全部单条宽度
+	creator.setmHeight(30);
+	creator.setmWidth(300);
+
+	creator.setFontStyle(fontStyle,fontSize,ifFontBlod);
     
 ```
 
