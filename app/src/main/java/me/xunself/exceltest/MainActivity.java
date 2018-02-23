@@ -40,6 +40,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 creator.createAllTexts(titles);
                 creator.setmHeight(30);
                 creator.setmWidth(300);
+                creator.createAllTexts(new String[]{"1","2","3"});
                 String[] texts = {"2017-12-08","android","Hello World！"};
                 creator.createAllTexts(texts);
                 creator.writeData();
