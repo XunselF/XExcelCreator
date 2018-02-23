@@ -5,18 +5,18 @@
 ### 快速建表
 
 参1：文件名 参2；表名 参3：表的位置
-
-	XExcelCreator creator = new XExcelCreator(filename,sheetname,0)		//初始化  
-	.createText("HelloWorld")											//创建单个数据
-	.writeData();														//提交
-
+```
+XExcelCreator creator = new XExcelCreator(filename,sheetname,0)	//初始化  
+	.createText("HelloWorld")	//创建单个数据
+	.writeData();	//提交
+```
 
 ### 创建多个数据
 
 ```
-XExcelCreator creator = new XExcelCreator("test1","1",0);			//初始化
-creator.createAllTexts(new String[]{"1","2","3"});					//创建单条数据
-creator.writeData();												//提交
+XExcelCreator creator = new XExcelCreator("test1","1",0);	//初始化
+creator.createAllTexts(new String[]{"1","2","3"});	//创建单条数据
+creator.writeData();	//提交
 
 ```
 
@@ -25,12 +25,14 @@ creator.writeData();												//提交
 ```
 setFontStyle(fontStyle,fontSize,ifFontBlod)；
 //设置字体样式 字体大小 是否粗体
-creator.setmHeight(30);												//设置全部单条高度
-creator.setmWidth(300);												//设置全部单条宽度
+creator.setmHeight(30);	//设置全部单条高度
+creator.setmWidth(300);	//设置全部单条宽度
     
 ```
 
 ### MIT License
+
+```
 
 MIT License
 
@@ -53,3 +55,5 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+```
